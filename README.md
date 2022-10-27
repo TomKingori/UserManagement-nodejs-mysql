@@ -17,6 +17,7 @@ npm install express dotenv express-handlebars body-parser mysql
 ```sh
 npm install --save-dev
 ```
+
 Create database with preferred name in Mysql
 
 Add table to the Database(change DB_NAME):
@@ -31,10 +32,26 @@ INSERT INTO `user`
 (NULL, 'Amanda',      'Nunes',        'anunes@ufc.com',        '012345 678910', '',          'active'),
 (NULL, 'Alexander',   'Volkanovski',  'avolkanovski@ufc.com',  '012345 678910', '',          'active'),
 (NULL, 'Khabib',      'Nurmagomedov', 'knurmagomedov@ufc.com', '012345 678910', '',          'active'),
-(NULL, 'Kamaru',      'Usman',        'kusman@ufc.com',        '012345 678910', '',          'active');
+(NULL, 'Kamaru',      'Usman',        'kusman@ufc.com',        '012345 678910', '',          'active'),
+(NULL, 'Israel',      'Adesanya',     'iadesanya@ufc.com',     '012345 678910', '',          'active'),
+(NULL, 'Henry',       'Cejudo',       'hcejudo@ufc.com',       '012345 678910', '',          'active'),
+(NULL, 'Valentina',   'Shevchenko',   'vshevchenko@ufc.com',   '012345 678910', '',          'active'),
+(NULL, 'Tyron',       'Woodley',      'twoodley@ufc.com',      '012345 678910', '',          'active'),
+(NULL, 'Rose',        'Namajunas ',   'rnamajunas@ufc.com',    '012345 678910', '',          'active'),
+(NULL, 'Tony',        'Ferguson ',    'tferguson@ufc.com',     '012345 678910', '',          'active'),
+(NULL, 'Jorge',       'Masvidal ',    'jmasvidal@ufc.com',     '012345 678910', '',          'active');
 ```
 
-In the .env file change:
-`database name`
-`database username`
-`databse password`
+In the .env file change: 
+`database name(DB_NAME)`
+`database username(DB_USER)`
+`databse password(DB_PASS)`
+
+## Running the app
+Inside the parent folder, run:
+```sh
+npm start
+```
+
+## Viewing The App
+Go to `http://localhost:5000/`
