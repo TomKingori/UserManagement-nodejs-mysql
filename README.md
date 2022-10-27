@@ -8,19 +8,20 @@ Make sure you have the latest version of Node installed.
 git clone <repo-url>
 ```
 
-Inside the cloned folder:
+Inside the cloned folder, run:
 
 ```sh
 npm install express dotenv express-handlebars body-parser mysql
 ```
 
 ```sh
-npm install --save-dev
+npm install --save-dev nodemon
 ```
+## Creating and populating the database
 
-Create database with preferred name in Mysql
+Create database with preferred name in MySql
 
-Add table to the Database(change DB_NAME):
+Add table to the Database (change DB_NAME):
 ```sh
 CREATE TABLE `{DB_NAME}`.`user` ( `id` INT NOT NULL AUTO_INCREMENT , `first_name` VARCHAR(45) NOT NULL , `last_name` VARCHAR(45) NOT NULL , `email` VARCHAR(45) NOT NULL , `phone` VARCHAR(45) NOT NULL , `comments` TEXT NOT NULL , `status` VARCHAR(10) NOT NULL DEFAULT 'active' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 ```
@@ -42,10 +43,10 @@ INSERT INTO `user`
 (NULL, 'Jorge',       'Masvidal ',    'jmasvidal@ufc.com',     '012345 678910', '',          'active');
 ```
 
-In the .env file change: 
-`database name(DB_NAME)`
-`database username(DB_USER)`
-`databse password(DB_PASS)`
+In the .env file modify: 
+`database name (DB_NAME)`
+`database username (DB_USER)`
+`databse password (DB_PASS)`
 
 ## Running the app
 Inside the parent folder, run:
